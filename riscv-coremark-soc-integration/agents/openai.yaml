@@ -1,0 +1,3 @@
+interface:
+  display_name: "RISC-V CoreMark SoC 集成"
+  short_description: "集成 MMIO 外设并验证 RISC-V CoreMark"
