@@ -1,0 +1,12 @@
+{
+  "part": "xc7a100tfgg484-2",
+  "top": "acx720_smoke",
+  "tb_top": "tb_smoke",
+  "sources": ["rtl/acx720_smoke.v"],
+  "tb_sources": ["tb/tb_smoke.sv"],
+  "include_dirs": ["rtl"],
+  "data_files": {"rom/values.hex":"hex/values.hex"},
+  "xdc": ["pins.xdc"],
+  "runtime": "2us",
+  "required_pass": "PASS ACX720_WORKFLOW_SMOKE"
+}

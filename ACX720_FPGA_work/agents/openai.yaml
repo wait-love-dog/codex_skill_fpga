@@ -1,0 +1,6 @@
+interface:
+  display_name: "ACX720_FPGA_work"
+  short_description: "ACX720-V3 板卡开发、Vivado 仿真、实现与实板定位工作流"
+  default_prompt: "使用 $ACX720_FPGA_work，按 ACX720-V3 实板资料完成当前 FPGA 项目的仿真、实现和所需验证。"
+policy:
+  allow_implicit_invocation: true
