@@ -1,0 +1,4 @@
+interface:
+  display_name: "ACX720_wrong_summary"
+  short_description: "ACX720 实板排错案例库：复位、CPU 动画、摄像头色带及后续 bug 复盘"
+  default_prompt: "使用 $ACX720_wrong_summary 查阅相似故障，依据实测定位问题，并将新证据和验收结果更新到案例库。"

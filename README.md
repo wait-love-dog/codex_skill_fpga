@@ -9,5 +9,6 @@
 | [riscv-coremark-soc-integration](riscv-coremark-soc-integration/SKILL.md) | RISC-V CPU 的 MMIO 外设集成、CoreMark 镜像构建和分层验证 |
 | [vivado-auto-sim](vivado-auto-sim/SKILL.md) | 扫描 Verilog/SystemVerilog 工程并生成 Vivado 仿真 TCL 和启动脚本 |
 | [ACX720_FPGA_work](ACX720_FPGA_work/SKILL.md) | ACX720-V3 板卡资料与引脚、Vivado XSIM 仿真、综合实现、JTAG/ILA 调试与实板验收 |
+| [ACX720_wrong_summary](ACX720_wrong_summary/SKILL.md) | ACX720 排错案例与持续维护：CPU 动画、复位极性、摄像头色阶及后续 bug 归档 |
 
 每个技能目录包含原始 `SKILL.md` 及其配套参考文档、脚本或界面配置。具体使用方法和工具依赖见各技能说明。
