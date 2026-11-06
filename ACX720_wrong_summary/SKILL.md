@@ -11,6 +11,9 @@ description: ACX720 FPGA 实板 bug 复盘与持续积累。用于 CPU/TFT 动�
 
 - CPU 不画、LED 不变、拨动复位才动：读 [CPU 动画停住](references/ACX720-001-cpu-animation.md)。
 - 摄像头“花屏”、肤色分层、重上电恢复：读 [摄像头色阶断层](references/ACX720-002-camera-color.md)。先区分颜色量化、像素错位、噪点、帧冻结，再选测量方法。
+- ROI 曲线有周期、三通道主峰一致却无法验证心率：读 [共模亮度误判](references/ACX720-005-common-mode-pulse.md)，使用非皮肤负对照与数据质量拒绝，不能直接把最大峰交给显示界面。
+- FX2 无法识别、描述符错误、RAM 下载成功却不枚举或串口画面低帧率：读 [FX2 枚举与传图](references/ACX720-013-fx2-enumeration.md)，分开判断 Code 28、Code 43、ROM 引导、RAM 校验和固件执行。
+- Vivado/XSIM 生成路径缺失或中文报告路径乱码：读 [Vivado 路径问题](references/ACX720-014-vivado-paths.md)。
 - 历史案例只是待检验假设。对照当前生产顶层、器件、源码/位流版本、时钟、开关原始电平和软件镜像；不要直接套旧地址、旧频率或旧引脚命名。
 - 多次修改仍无改善时，保存失败结果，转向可区分假设的 ILA、UART、寄存器读回、已知像素或同位流 A/B 实验。停止重复同类盲改。
 - DONE、CRC、帧计数分别证明有限范围；显示问题必须验证真实像素/可见结果。用户反馈仍失败时，案例不能标为已解决。
